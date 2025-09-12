@@ -19,7 +19,7 @@ int main() {
     scanf(" %c", &estado1); // espaço antes do %C para não ler o enter.
 
     printf("digite o codigo ex:A01 : \n");
-    scanf("%s", codigo1);
+    scanf("%3s", codigo1);
 
     printf("digite o nome da cidade: \n");
     scanf("%s", nome_da_cidade1);
@@ -42,7 +42,7 @@ int main() {
     scanf(" %c", &estado2); // espaço antes do %C para não ler o enter.
 
     printf("digite o codigo ex:A01 : \n");
-    scanf("%s", codigo2);
+    scanf("%3s", codigo2);
 
     printf("digite o nome da cidade: \n");
     scanf("%s", nome_da_cidade2);
@@ -60,7 +60,7 @@ int main() {
     scanf("%d", &pontos_turisticos2);
 
     // Exibição dos dados carta 1
-    printf("--Carta 1:\n");
+    printf("--Carta 1--\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", nome_da_cidade1);
@@ -70,7 +70,7 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos1);
 
     // Exibição dos dados carta 2 
-    printf("--Carta 2:\n");
+    printf("--Carta 2--\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nome_da_cidade2);
