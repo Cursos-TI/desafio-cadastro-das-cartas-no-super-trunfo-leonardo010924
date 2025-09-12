@@ -38,7 +38,7 @@ int main() {
     printf("digite a quantidade de pontos turisticos: \n ");
     scanf("%d", &pontos_turisticos1);
 
-    //calculando a densidade e o pib percapita da carta 2
+    //calculando a densidade e o pib percapita da carta 1
     densidade1 = população1 / area1;
     PIB_per_capita1 = PIB1 * 1000000000 / população1;
 
