@@ -24,6 +24,7 @@ int main() {
 
     //imprimindo as variaveis carta 1:
     printf("cadastro da carta 1: \n");
+
     printf("digite o estado (A-H): \n");
     scanf(" %c", &estado1); // espaço antes do %C para não ler o enter.
 
@@ -47,6 +48,7 @@ int main() {
 
      //imprimindo variaveis carta 2:
     printf("cadastro da carta 2: \n");
+    
     printf("digite o estado (A-H): \n");
     scanf(" %c", &estado2); // espaço antes do %C para não ler o enter.
 
