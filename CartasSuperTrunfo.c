@@ -14,7 +14,7 @@ int main() {
     int pontos_turisticos1, pontos_turisticos2;
 
    //imprimindo as variaveis carta 1:
-    printf("cadastro da carta 1: \n");
+    printf("---cadastro da carta 1--- \n");
     printf("digite o estado (A-H): \n");
     scanf(" %c", &estado1); // espaço antes do %C para não ler o enter.
 
