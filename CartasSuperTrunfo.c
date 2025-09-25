@@ -71,7 +71,7 @@ int main() {
     //calculando a densidade e o pib percapita da carta 2
     densidade2 = população2 / area2;
     PIB_per_capita2 = PIB2 * 1000000000 / população2;
-    super_poder2 = populacão2 + area2 + PIB2 + pontos_turisticos2 + PIB_per_capita2 + (1 / densidade2);
+    super_poder2 = população2 + area2 + PIB2 + pontos_turisticos2 + PIB_per_capita2 + (1 / densidade2);
 
 
     // Exibição dos dados carta 1
@@ -79,7 +79,7 @@ int main() {
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", nome_da_cidade1);
-    printf("População: %d\n", população1);
+    printf("População: %lu\n", população1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", PIB1);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos1);
@@ -91,7 +91,7 @@ int main() {
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nome_da_cidade2);
-    printf("População: %d\n", população2);
+    printf("População: %lu\n", população2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", PIB1);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
