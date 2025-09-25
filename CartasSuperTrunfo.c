@@ -19,7 +19,8 @@ int main() {
     
 
    //imprimindo as variaveis carta 1:
-    printf("---cadastro da carta 1--- \n");
+    printf("\n---cadastro da carta 1--- \n");
+
     printf("digite o estado (A-H): \n");
     scanf(" %c", &estado1); // espaço antes do %C para não ler o enter.
 
@@ -49,7 +50,7 @@ int main() {
 
 
     //imprimindo variaveis carta 2:
-    printf("---cadastro da carta 2---\n");
+    printf("\n---cadastro da carta 2---\n");
     printf("digite o estado (A-H): \n");
     scanf(" %c", &estado2); // espaço antes do %C para não ler o enter.
 
@@ -79,7 +80,7 @@ int main() {
 
 
     // Exibição dos dados carta 1
-    printf("--Carta 1--\n");
+    printf("\n--Carta 1--\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", nome_da_cidade1);
@@ -92,13 +93,13 @@ int main() {
     printf("Super poder:%.2f\n",super_poder1);
 
     // Exibição dos dados carta 2 
-    printf("--Carta 2--\n");
+    printf("\n--Carta 2--\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", nome_da_cidade2);
     printf("População: %lu\n", população2);
     printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões de reais\n", PIB1);
+    printf("PIB: %.2f bilhões de reais\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f Reais\n", PIB_per_capita2);
@@ -106,7 +107,7 @@ int main() {
 
    //comparando as variaveis
 
-    char *vencedor[50] = {"carta 2 venceu ", "carta 1 venceu"};
+
     int reslt_população = população1 > população2;
     int reslt_area = area1 > area2;
     int reslt_pib = PIB1 > PIB2;
@@ -119,16 +120,16 @@ int main() {
 
     // comparando as cartas
 
-    printf("*** comparando as cartas *** \n");
-    printf("População: %s (%d)\n)", vencedor[reslt_população], reslt_população);
-    printf("Area: %s (%d)\n)", vencedor[reslt_area], reslt_area);
-    printf("Pib: %s (%d)\n)", vencedor[reslt_pib], reslt_pib);
-    printf("pontos turisticos: %s (%d)\n)", vencedor[reslt_pontos_turisticos], reslt_pontos_turisticos);
-    printf("Densidade: %s (%d)\n)", vencedor[reslt_densidade], reslt_densidade);
-    printf("Pib percapita: %s (%d)\n)", vencedor[reslt_pibpercapita], reslt_pibpercapita);
-    printf("super poder: %s (%d)\n)", vencedor[reslt_super_poder], reslt_super_poder);
+    printf("\n*** Resultados das Comparações (1 = Verdadeiro carta 1 vence, 0 = Falso carta 2 vence ) ***\n");
 
+    printf("População (Carta 1 > Carta 2): %d\n", população1 > população2);
+    printf("Área (Carta 1 > Carta 2): %d\n", area1 > area2);
+    printf("PIB (Carta 1 > Carta 2): %d\n", PIB1 > PIB2);
+    printf("Pontos Turísticos (Carta 1 > Carta 2): %d\n", pontos_turisticos1 > pontos_turisticos2);
+    printf("Densidade (Carta 1 < Carta 2): %d\n", densidade1 < densidade2); // logica invertida
+    printf("PIB per Capita (Carta 1 > Carta 2): %d\n", PIB_per_capita1 > PIB_per_capita2);
+    printf("Super Poder (Carta 1 > carta 2): %d\n", super_poder1 > super_poder2);
 
-    return 0;
+ return 0;
 
 }
