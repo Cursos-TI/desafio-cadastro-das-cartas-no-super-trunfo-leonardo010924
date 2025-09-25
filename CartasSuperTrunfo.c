@@ -8,7 +8,7 @@ int main() {
     char estado1, estado2;
     char codigo1[4], codigo2[4];
     char nome_da_cidade1[50], nome_da_cidade2[50];
-    unsigned long população1, população2;
+    unsigned long int população1, população2;
     float area1, area2;
     float PIB1, PIB2;
     int pontos_turisticos1, pontos_turisticos2;
