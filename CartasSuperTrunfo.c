@@ -5,6 +5,7 @@ int main() {
     printf("desafio castas super trunfo- países \n");
     
     //carta 1: colocando as variaveis.
+    int carta1, carta2;
     char estado1, estado2;
     char codigo1[4], codigo2[4];
     char nome_da_cidade1[50], nome_da_cidade2[50];
@@ -42,6 +43,7 @@ int main() {
     //calculando a densidade e o pib percapita da carta 1
     densidade1 = população1 / area1;
     PIB_per_capita1 = PIB1 * 1000000000 / população1;
+    // calculando super poder 
     super_poder1 = população1 + area1 + PIB1 + pontos_turisticos1 + PIB_per_capita1 + (1 / densidade1);
 
 
@@ -71,6 +73,7 @@ int main() {
     //calculando a densidade e o pib percapita da carta 2
     densidade2 = população2 / area2;
     PIB_per_capita2 = PIB2 * 1000000000 / população2;
+    // calculando super poder 
     super_poder2 = população2 + area2 + PIB2 + pontos_turisticos2 + PIB_per_capita2 + (1 / densidade2);
 
 
@@ -98,6 +101,9 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f Reais\n", PIB_per_capita2);
 
+    // comparando as cartas 
+    printf("*** comparando as cartas *** \n");
+    printf("População: carta %d venceu (%d)/n", 1 + (população1 > população2));
 
 
 
