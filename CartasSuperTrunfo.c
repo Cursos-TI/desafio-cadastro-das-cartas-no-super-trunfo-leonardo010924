@@ -107,19 +107,12 @@ int main() {
    //comparando as variaveis
 
     char *vencedor[50] = {"carta 2 venceu ", "carta 1 venceu"};
-
     int reslt_população = população1 > população2;
-
     int reslt_area = area1 > area2;
-
     int reslt_pib = PIB1 > PIB2;
-
     int reslt_pontos_turisticos = pontos_turisticos1 > pontos_turisticos2;
-
     int reslt_densidade = densidade1 < densidade2; // Menor vence
-
     int reslt_pibpercapita = PIB_per_capita1 > PIB_per_capita2;
-
     int reslt_super_poder = super_poder1 > super_poder2;
 
 
@@ -127,19 +120,12 @@ int main() {
     // comparando as cartas
 
     printf("*** comparando as cartas *** \n");
-
     printf("População: %s (%d)\n)", vencedor[reslt_população], reslt_população);
-
     printf("Area: %s (%d)\n)", vencedor[reslt_area], reslt_area);
-
     printf("Pib: %s (%d)\n)", vencedor[reslt_pib], reslt_pib);
-
     printf("pontos turisticos: %s (%d)\n)", vencedor[reslt_pontos_turisticos], reslt_pontos_turisticos);
-
     printf("Densidade: %s (%d)\n)", vencedor[reslt_densidade], reslt_densidade);
-
     printf("Pib percapita: %s (%d)\n)", vencedor[reslt_pibpercapita], reslt_pibpercapita);
-
     printf("super poder: %s (%d)\n)", vencedor[reslt_super_poder], reslt_super_poder);
 
 
